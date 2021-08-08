@@ -8,8 +8,9 @@ set backspace=2            " Fix backspace behavior on most terminals.
 set number
 colorscheme default        " Change a colorscheme.
 " set foldmethod=indent
-" set wildmenu
+set wildmenu
 
+set path+=*
 set hlsearch "Highlights search terms"
 set incsearch "Highlights search terms as you type them"
 set showmatch "Highlights matching parentheses"

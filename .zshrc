@@ -1,5 +1,4 @@
-autoload -U promptinit # initialize the prompt system promptinit
-promptinit 
+autoload -Uz compinit && compinit
 
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
@@ -11,6 +10,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 source ~/.git-prompt.sh
-setopt PROMPT_SUBST; PS1='%c%B%F{green}$(__git_ps1 "(%s)")%f%b\$ '
+export GIT_PS1_SHOWDIRTYSTATE=1
+setopt PROMPT_SUBST; PS1='%B%F{cyan}%c%f%F{magenta}$(__git_ps1 " (%s)")%f%b\$ '
 
 alias ack='ack --color-match="bold red"'
