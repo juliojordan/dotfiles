@@ -2,8 +2,9 @@ syntax enable              " Enable syntax highlighting.
 filetype plugin indent on  " Enable file type based indentation.
 set autoindent             " Respect indentation when starting a new line.
 set expandtab              " Expand tabs to spaces.
-set tabstop=2              " Number of spaces tab is counted for.
-set shiftwidth=2           " Number of spaces to use for autoindent.
+set tabstop=4              " Number of spaces tab is counted for.
+set shiftwidth=4           " Number of spaces to use for autoindent.
+set softtabstop=4
 set backspace=2            " Fix backspace behavior on most terminals.
 set number
 colorscheme default        " Change a colorscheme.
@@ -19,6 +20,7 @@ set smartcase "Unless you put some caps in your search term"
 
 set laststatus=2
 set ruler
+set scrolloff=5
 
 " Manage plugins with vim-plug.
 call plug#begin()
