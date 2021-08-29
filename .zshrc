@@ -11,6 +11,6 @@ alias l='ls -CF'
 
 source ~/.git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1
-setopt PROMPT_SUBST; PS1='%F{blue}%c%f%F{red}$(__git_ps1 "(%s)")%f\$ '
+setopt PROMPT_SUBST; PS1='%B%F{blue}%c%f%F{red}$(__git_ps1 "(%s)")%f%b\$ '
 
 alias ack='ack --color-match="bold red"'
