@@ -1,4 +1,5 @@
 autoload -Uz compinit && compinit
+# setopt AUTO_CD
 
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
