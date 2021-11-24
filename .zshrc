@@ -12,6 +12,8 @@ alias ls='ls -G'
 # alias la='ls -A'
 # alias l='ls -CF'
 
+export EDITOR=vim
+
 source ~/.git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1
 setopt PROMPT_SUBST; PS1='%c%F{magenta}$(__git_ps1 "(%s)")%f\$ '
