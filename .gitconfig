@@ -8,3 +8,9 @@
 	ui = auto
 [alias]
 	graph = log --all --decorate --graph --oneline
+	show-graph = log --abbrev-commit --graph --oneline
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
